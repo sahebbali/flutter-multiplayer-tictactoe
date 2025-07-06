@@ -8,7 +8,7 @@ class Scoreboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     RoomDataProvider roomDataProvider = Provider.of<RoomDataProvider>(context);
-
+    // Scoreboard
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -26,10 +26,7 @@ class Scoreboard extends StatelessWidget {
               ),
               Text(
                 roomDataProvider.player1.points.toInt().toString(),
-                style: const TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
+                style: const TextStyle(fontSize: 20, color: Colors.white),
               ),
             ],
           ),
@@ -48,10 +45,7 @@ class Scoreboard extends StatelessWidget {
               ),
               Text(
                 roomDataProvider.player2.points.toInt().toString(),
-                style: const TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
+                style: const TextStyle(fontSize: 20, color: Colors.white),
               ),
             ],
           ),
